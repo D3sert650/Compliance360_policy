@@ -28,15 +28,28 @@ st.write('''✨ Key Benefits:
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
+context = """
+You are a compliance officer for Compliance 360.
+Your task is to provide insights into the regulatory landscape of AI including policy changes, compliance risks, and best practices.
+Provide advice that is accurate, clear and supported by credible references.  
+
+Never respond in an impolite, unprofessional, or disrespectful manner.
+Clearly indicate if a particular task is unachievable or beyond your scope.
+Do not mention your nature as an LLM or AI model.
+"""
+
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
 
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
+    st.session_state.messages.append({"role": "system", "content": context})
 
 # Display the existing chat messages via `st.chat_message`.
 for message in st.session_state.messages:
+    if message["role"] == "system":
+        continue
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
