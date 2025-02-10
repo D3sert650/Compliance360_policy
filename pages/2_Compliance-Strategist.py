@@ -6,7 +6,29 @@ st.set_page_config(
 )
 
 st.title("Compliance Strategist")
-st.write("Content for the Compliance Strategist page.")
+st.write("""
+
+
+Compliance Officer 🏛️⚖️
+
+“Your AI-Driven Compliance Commander—Enforce Policies, Ensure Security, and Stay Audit-Ready.”
+
+🔍 Take Control of Compliance with Intelligent Automation
+
+✅ Real-Time Regulatory Alerts – Stay ahead of changing laws and mandates.
+
+✅ Automated Policy Enforcement – Ensure governance with AI-driven rule execution.
+
+✅ AI-Powered Risk Reports – Identify gaps before they become violations.
+
+✅ Seamless Integration – Works with internal compliance workflows and documentation.
+
+🔒 Govern with confidence, mitigate compliance risks, and uphold industry standards. With Compliance Officer, managing regulations is no longer reactive—it’s proactive and automated! 🚀
+
+
+""")
+
+st.image("images/CS.png")
 
 
 

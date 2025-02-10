@@ -60,25 +60,37 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-col1, col2 = st.columns([1, 2], gap="large")
+#col1, col2 = st.columns([1, 2])
 
 # Main title
-with col1: 
-    st.image(image="images/Compliance360+.jpeg", width=100)
-with col2: 
-    # st.markdown('<div class="title align-items: center; justify-content: center">Welcome to Compliance360+</div>', unsafe_allow_html=True)
-    # st.markdown('<div class="subtitle">Streamlining Your Compliance Journey with AI Powered Precision</div>', unsafe_allow_html=True)
-    st.markdown(
-        """
-        <div style="display: flex; height: 100%; align-items: center; justify-content: center; flex-direction: column;">
-            <h1 style="color: #EAEAEA; font-size: 50px; text-align: center;">Welcome to Compliance360+</h1>
-            <p style="color: #FFFF99; font-size: 20px; text-align: center;">
-            <b>Streamlining Your Compliance Journey with AI-Powered Precision</b>
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+# with col1: 
+#     st.image(image="images/Compliance360+.jpeg", width=100)
+
+st.markdown('<div class="title">Welcome to Compliance360+</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">Streamlining Your Compliance Journey with AI-Powered Precision</div>', unsafe_allow_html=True)
+
+
+# with col2: 
+#     # st.markdown('<div class="title align-items: center; justify-content: center">Welcome to Compliance360+</div>', unsafe_allow_html=True)
+#     # st.markdown('<div class="subtitle">Streamlining Your Compliance Journey with AI Powered Precision</div>', unsafe_allow_html=True)
+#     st.markdown(
+#         """
+#         <div style="display: flex; height: 100%; align-items: center; justify-content: center;">
+#             <h1 style="color: #EAEAEA; font-size: 50px; text-align: center;">Welcome to Compliance360+</h1>
+#         </div>
+#         """,
+#         unsafe_allow_html=True
+#     )
+#     st.markdown(
+#         """
+#         <div style=" align-items: center; justify-content: center;">
+#          <h2 style="color: #FFFF99; font-size: 20px; text-align: center;">
+#             <b>Streamlining Your Compliance Journey with AI-Powered Precision</b>
+#         </h2>
+#         </div>
+#         """,
+#         unsafe_allow_html=True
+#     )
 # Features section
 features = [
     {
