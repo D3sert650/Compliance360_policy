@@ -18,16 +18,16 @@ st.set_page_config(
 )
 
 # Custom CSS for styling
+
 st.markdown(
     """
     <style>
-    .main {
-        background-color: #575757;
-        padding: 20px;
+    .stApp {
+        background-color: #575757;  /* Dark Gray Background */
     }
     .title {
         font-size: 3em;
-        color: #575757;
+        color: #D1F801;
         text-align: center;
         margin-bottom: 20px;
     }
@@ -65,7 +65,7 @@ st.markdown(
 # Main title
 # with col1: 
 #     st.image(image="images/Compliance360+.jpeg", width=100)
-
+st.image("images/Compliance360+.jpeg", width=175)
 st.markdown('<div class="title">Welcome to Compliance360+</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">Streamlining Your Compliance Journey with AI-Powered Precision</div>', unsafe_allow_html=True)
 
